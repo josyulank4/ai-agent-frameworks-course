@@ -1,4 +1,4 @@
-"""A transparent group-chat engine (Lesson 28 demo).
+"""A transparent group-chat engine (Lesson 21 demo).
 
 Implements AutoGen's organising ideas: conversable agents, speaker
 selection, a message budget and explicit termination — the most

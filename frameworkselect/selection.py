@@ -1,4 +1,4 @@
-"""Framework selection scorer (Lesson 3 demo).
+"""Framework selection scorer (Lesson 4 demo).
 
 Scores candidate frameworks against weighted production criteria, with
 veto conditions that a high average can never outvote. Stdlib only.

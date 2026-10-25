@@ -1,4 +1,4 @@
-"""One trace schema for every framework (Lesson 43 demo).
+"""One trace schema for every framework (Lesson 35 demo).
 
 Runs, steps, tool calls, tokens and cost in a single record you own;
 secrets are redacted before storage. Stdlib only.

@@ -1,4 +1,4 @@
-"""Namespaced memory with provenance and quarantine (Lesson 40 demo).
+"""Namespaced memory with provenance and quarantine (Lesson 33 demo).
 
 Private, team and global namespaces; every write carries its author and
 run; a poisoned namespace can be quarantined without stopping the

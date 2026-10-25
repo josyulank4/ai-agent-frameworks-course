@@ -1,4 +1,4 @@
-"""Production readiness review (Lesson 55 / capstone demo).
+"""Production readiness review (Lesson 50 demo).
 
 Scores the capstone pack — selection record, eval evidence, cost model,
 governance — and ends in an honest GO or NO-GO with named blockers.

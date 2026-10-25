@@ -1,4 +1,4 @@
-"""An evaluation harness (Lesson 48 demo).
+"""An evaluation harness (Lesson 40 demo).
 
 Scores a workflow on a golden set — success, tool correctness and cost —
 and diffs two versions so a regression cannot ship silently. Stdlib

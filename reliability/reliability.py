@@ -1,4 +1,4 @@
-"""Retries, circuit breakers and run budgets (Lesson 51 area / S11 demo).
+"""Retries, circuit breakers and run budgets (Lesson 43 demo).
 
 Retries only where safe, a breaker that fails fast, and a run budget in
 steps, tokens and money — whichever trips first stops the run. Stdlib.

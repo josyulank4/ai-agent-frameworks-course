@@ -1,4 +1,4 @@
-"""A transparent graph engine (Lesson 8 demo).
+"""A transparent graph engine (Lesson 9 demo).
 
 Implements the mechanics LangGraph industrialises: typed state, nodes,
 conditional edges, a loop guard, checkpoints after every super-step and a

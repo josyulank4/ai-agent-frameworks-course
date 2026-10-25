@@ -1,4 +1,4 @@
-"""A transparent crew runner (Lesson 20 demo).
+"""A transparent crew runner (Lesson 17 demo).
 
 Implements CrewAI's organising ideas without magic: roles with goals,
 tasks as contracts with expected outputs, sequential and hierarchical

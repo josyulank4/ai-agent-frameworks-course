@@ -1,4 +1,4 @@
-"""An MCP-style tool server (Lesson 35 demo).
+"""An MCP-style tool server (Lesson 28 demo).
 
 One tool registry, schema validation before execution, read/write/
 destructive classes, and one audit log — callable from a graph, a crew
