@@ -25,6 +25,7 @@ Run from the repo root:
 | Graph core | `python -m graphcore.graph_engine` | Nodes, conditional edges, checkpointing, loop guard and a full trace |
 | Crew core | `python -m crewcore.crew_runner` | Roles, task contracts, sequential and hierarchical processes, task ledger |
 | Conversation | `python -m conversation.group_chat` | Speaker selection, message budget and explicit termination |
+| Portability | `python -m portability.portability` | One triage workflow as a graph and as a crew — same inputs, scored outputs |
 | Tools / MCP | `python -m toolsmith.tool_server` | One registry, schema validation, destructive-tool gating, audit log |
 | Memory | `python -m memory.memory_store` | Namespaced memory with provenance and quarantine |
 | Observability | `python -m observability.tracing` | One trace schema, cost attribution, secrets redacted before storage |

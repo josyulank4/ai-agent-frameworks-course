@@ -47,6 +47,10 @@ def main():
         "retry: succeeded on attempt 3", "breaker-open: failed fast", "budget tripped on tokens", "reliability demo complete"])
     expect_module("readiness", "readiness.readiness", [
         "verdict: NO-GO", "blocker: rollback plan rehearsed", "readiness demo complete"])
+    expect_module("portability", "portability.portability", [
+        "portability: incident triage, one workflow two frameworks",
+        "graph: 3/3 decisions match expected", "crew: 3/3 decisions match expected",
+        "agreement: graph and crew agree on 3/3 incidents", "portability demo complete"])
 
     print()
     print("== direct assertions ==")
@@ -87,6 +91,14 @@ def main():
     verdict, blockers = review()
     check("readiness verdict is NO-GO while a blocker stands", verdict == "NO-GO" and blockers == ["rollback plan rehearsed"])
     check("readiness passes when every check passes", review([("x", True)])[0] == "GO")
+    from portability.portability import run_graph_triage, run_crew_triage, triage_decision, CASES
+    gd, _ = run_graph_triage(CASES); cd, _ = run_crew_triage(CASES)
+    check("portability: graph matches expected on all cases", all(gd[c["id"]] == c["expected"] for c in CASES))
+    check("portability: crew matches expected on all cases", all(cd[c["id"]] == c["expected"] for c in CASES))
+    check("portability: both frameworks agree on every case", gd == cd)
+    check("triage rule escalates at the impact threshold", triage_decision({"impact": 50, "revenue_path": False}) == "escalate")
+    check("triage rule escalates on a revenue path at low impact", triage_decision({"impact": 5, "revenue_path": True}) == "escalate")
+    check("triage rule queues a minor off-path incident", triage_decision({"impact": 5, "revenue_path": False}) == "queue")
 
     print()
     if FAILURES:
