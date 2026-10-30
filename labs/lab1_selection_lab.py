@@ -79,7 +79,7 @@ def main():
         say("wait — I typed that from memory; watch what it does")
         run('python3 -c "from frameworkselect.selection import CANDIDATES, score\n'
             '[print(score(n, s)) for n, s in CANDIDATES]"')
-        say("an AttributeError, and it is mine: a dict iterates keys,")
+        say("a ValueError, and it is mine: a dict iterates keys,")
         say("not pairs — the loop needs CANDIDATES.items()")
         say("correcting the loop, nothing else:")
         run('python3 -c "from frameworkselect.selection import CANDIDATES, score\n'
