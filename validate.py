@@ -58,7 +58,7 @@ def main():
         "REFUND $49.00 issued", "lab 3 complete"])
     expect_module("labs lab4 showdown", "labs.lab4_showdown_lab", [
         "Same Workflow, Two Frameworks", "verdicts identical: True",
-        "tokens: graph 1692 vs crew 3732", "lab 4 complete"])
+        "tokens: graph 1872 vs crew 3904", "lab 4 complete"])
     # NOTE: validate runs the lightweight gate check, NOT the full
     # lab 5 driver — the driver shells out to validate.py itself
     # (its showpiece), so running it here would recurse without bound.
