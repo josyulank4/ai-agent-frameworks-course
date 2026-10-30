@@ -33,6 +33,23 @@ Run from the repo root:
 | Reliability | `python -m reliability.reliability` | Retries, circuit breaker and run budgets |
 | Readiness | `python -m readiness.readiness` | Capstone readiness review: GO / NO-GO with named blockers |
 
+## Hands-On Labs
+
+The course's hands-on lab section: full working sessions built on the
+packages above — real runs, real failures, real fixes. Each lab is
+checksummed by a pair of git tags: check out `lab-N-start` for the
+state before the lab's code, `lab-N-finish` for the state the video
+ends in, and run the driver to reproduce the session.
+
+| Lab | Command | What happens |
+|---|---|---|
+| 1 · Selection | `python -m labs.lab1_selection_lab` | Score a real framework choice: a careless edit crashes the run, a hand-typed loop crashes it again, vetoes are proven to disqualify |
+| 2 · Graph resume | `python -m labs.lab2_graph_resume_lab` | Kill a graph run with SIGKILL mid-flight; resume from the persisted checkpoint; prove the final state identical |
+| 3 · Approval gate | `python -m labs.lab3_graph_interrupt_lab` | A refund pipeline stops at a human interrupt; approval on disk releases the payment; denial refuses it |
+| 4 · Showdown | `python -m labs.lab4_showdown_lab` | One triage workflow as a graph and as a crew: same verdicts, token and time bills compared, failure behavior contrasted |
+| 5 · Regression gate | `python -m labs.lab5_eval_gate_lab` | Break the evaluation harness with a one-word edit; watch validate.py go red; fix; gate a second workflow by the same rule |
+| 6 · Readiness | `python -m labs.lab6_readiness_lab` | The readiness review re-run with receipts from Labs 1–5; NO-GO with two honest blockers, flags never flipped |
+
 ## Validation
 
 `python validate.py` runs every demo end to end as a subprocess, checks

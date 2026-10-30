@@ -47,6 +47,9 @@ def main():
         "retry: succeeded on attempt 3", "breaker-open: failed fast", "budget tripped on tokens", "reliability demo complete"])
     expect_module("readiness", "readiness.readiness", [
         "verdict: NO-GO", "blocker: rollback plan rehearsed", "readiness demo complete"])
+    expect_module("labs lab1 selection", "labs.lab1_selection_lab", [
+        "Score a Real Framework Choice", "vetoed_by:",
+        "averages rank; vetoes disqualify", "lab 1 complete"])
     expect_module("portability", "portability.portability", [
         "portability: incident triage, one workflow two frameworks",
         "graph: 3/3 decisions match expected", "crew: 3/3 decisions match expected",
