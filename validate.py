@@ -59,6 +59,10 @@ def main():
     expect_module("labs lab4 showdown", "labs.lab4_showdown_lab", [
         "Same Workflow, Two Frameworks", "verdicts identical: True",
         "tokens: graph 1692 vs crew 3732", "lab 4 complete"])
+    expect_module("labs lab5 eval gate", "labs.lab5_eval_gate_lab", [
+        "Break It. Watch the Gate Catch It.",
+        "trivial changes do not get waived",
+        "correct workflow: 4/4 golden cases pass", "lab 5 complete"])
     expect_module("portability", "portability.portability", [
         "portability: incident triage, one workflow two frameworks",
         "graph: 3/3 decisions match expected", "crew: 3/3 decisions match expected",
