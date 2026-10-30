@@ -53,6 +53,9 @@ def main():
     expect_module("labs lab2 graph resume", "labs.lab2_graph_resume_lab", [
         "checkpoint written: next=reason steps=1", "exit code -9",
         "identical, field by field", "lab 2 complete"])
+    expect_module("labs lab3 approval gate", "labs.lab3_graph_interrupt_lab", [
+        "The Human Approval Gate", "decision recorded: approved",
+        "REFUND $49.00 issued", "lab 3 complete"])
     expect_module("portability", "portability.portability", [
         "portability: incident triage, one workflow two frameworks",
         "graph: 3/3 decisions match expected", "crew: 3/3 decisions match expected",
