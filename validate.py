@@ -63,6 +63,9 @@ def main():
         "Break It. Watch the Gate Catch It.",
         "trivial changes do not get waived",
         "correct workflow: 4/4 golden cases pass", "lab 5 complete"])
+    expect_module("labs lab6 readiness", "labs.lab6_readiness_lab", [
+        "The Readiness Review, With Receipts", "verdict: NO-GO",
+        "blocker: rollback plan rehearsed", "lab 6 complete"])
     expect_module("portability", "portability.portability", [
         "portability: incident triage, one workflow two frameworks",
         "graph: 3/3 decisions match expected", "crew: 3/3 decisions match expected",
