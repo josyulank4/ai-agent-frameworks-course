@@ -59,10 +59,13 @@ def main():
     expect_module("labs lab4 showdown", "labs.lab4_showdown_lab", [
         "Same Workflow, Two Frameworks", "verdicts identical: True",
         "tokens: graph 1692 vs crew 3732", "lab 4 complete"])
-    expect_module("labs lab5 eval gate", "labs.lab5_eval_gate_lab", [
-        "Break It. Watch the Gate Catch It.",
-        "trivial changes do not get waived",
-        "correct workflow: 4/4 golden cases pass", "lab 5 complete"])
+    # NOTE: validate runs the lightweight gate check, NOT the full
+    # lab 5 driver — the driver shells out to validate.py itself
+    # (its showpiece), so running it here would recurse without bound.
+    expect_module("labs lab5 eval gate", "labs.lab5_gate_check", [
+        "correct workflow: 4/4 golden cases pass",
+        "the broken variant FAILS the gate on exactly one case",
+        "lab 5 gate check complete"])
     expect_module("labs lab6 readiness", "labs.lab6_readiness_lab", [
         "The Readiness Review, With Receipts", "verdict: NO-GO",
         "blocker: rollback plan rehearsed", "lab 6 complete"])
