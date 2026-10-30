@@ -56,6 +56,9 @@ def main():
     expect_module("labs lab3 approval gate", "labs.lab3_graph_interrupt_lab", [
         "The Human Approval Gate", "decision recorded: approved",
         "REFUND $49.00 issued", "lab 3 complete"])
+    expect_module("labs lab4 showdown", "labs.lab4_showdown_lab", [
+        "Same Workflow, Two Frameworks", "verdicts identical: True",
+        "tokens: graph 1692 vs crew 3732", "lab 4 complete"])
     expect_module("portability", "portability.portability", [
         "portability: incident triage, one workflow two frameworks",
         "graph: 3/3 decisions match expected", "crew: 3/3 decisions match expected",
