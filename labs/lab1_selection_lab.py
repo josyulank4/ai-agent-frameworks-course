@@ -88,8 +88,8 @@ def main():
 
         step(4, STEPS, "read the scores the way a reviewer would")
         say("langgraph 119/130 (91.5%): no vetoes")
-        say("crewai 88/130 (67.7%): no vetoes, simply lighter")
-        say("autogen 77/130 (59.2%) — and VETOED by state,control")
+        say("crewai 83/130 (63.8%): no vetoes, simply lighter")
+        say("autogen 74/130 (56.9%) — and VETOED by state,control")
         say("its human-approval score of 4 cannot rescue it")
 
         step(5, STEPS, "prove the veto is doing real work")
